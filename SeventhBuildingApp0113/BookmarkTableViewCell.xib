@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BookmarkTableViewCell" customModule="SeventhBuildingApp0113" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="コメント" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPL-Xq-oZ5">
+                        <rect key="frame" x="34" y="54" width="300" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="r4K-5V-ez5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Hv-LV-uG1">
+                        <rect key="frame" x="260" y="123" width="32" height="31"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="編集">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.60784313729999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="16" name="HiraginoSans-W4"/>
+                                        <integer key="NSUnderline" value="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="tappedUpdateButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9ln-X1-cyC"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msj-Zx-ghd">
+                        <rect key="frame" x="14" y="14" width="78" height="30"/>
+                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="18"/>
+                        <state key="normal" title="1. 〇〇科">
+                            <color key="titleColor" red="0.0" green="0.60784313729999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="tappedInfoButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2lC-Uw-znk"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="faF-or-eEr">
+                        <rect key="frame" x="304" y="123" width="32" height="31"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="削除">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.60784313729999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="16" name="HiraginoSans-W4"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        <integer key="NSUnderline" value="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="tappedDeleteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gHd-HG-lFz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.90196078430000004" green="1" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="7Hv-LV-uG1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="260" id="2Jb-v9-4SU"/>
+                    <constraint firstAttribute="bottom" secondItem="faF-or-eEr" secondAttribute="bottom" constant="12" id="HgH-Q7-jmL"/>
+                    <constraint firstItem="faF-or-eEr" firstAttribute="leading" secondItem="7Hv-LV-uG1" secondAttribute="trailing" constant="12" id="PXN-Qv-bwA"/>
+                    <constraint firstItem="msj-Zx-ghd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="SJR-n3-CSf"/>
+                    <constraint firstItem="7Hv-LV-uG1" firstAttribute="top" secondItem="TPL-Xq-oZ5" secondAttribute="bottom" constant="10" id="TJ2-mv-Yoe"/>
+                    <constraint firstItem="7Hv-LV-uG1" firstAttribute="bottom" secondItem="faF-or-eEr" secondAttribute="bottom" id="TOl-30-hiU"/>
+                    <constraint firstItem="TPL-Xq-oZ5" firstAttribute="top" secondItem="msj-Zx-ghd" secondAttribute="bottom" constant="10" id="nS8-L1-cgR"/>
+                    <constraint firstItem="TPL-Xq-oZ5" firstAttribute="leading" secondItem="msj-Zx-ghd" secondAttribute="leading" constant="20" id="sY4-5J-F5C"/>
+                    <constraint firstItem="msj-Zx-ghd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="wBL-Ay-kpQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentLabel" destination="TPL-Xq-oZ5" id="k17-M7-fPd"/>
+                <outlet property="deleteButton" destination="faF-or-eEr" id="42L-JP-e5f"/>
+                <outlet property="infoButton" destination="msj-Zx-ghd" id="cZn-VP-4ME"/>
+                <outlet property="updateButton" destination="7Hv-LV-uG1" id="sfW-Ya-M3v"/>
+            </connections>
+            <point key="canvasLocation" x="-268.1159420289855" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
