@@ -1,2 +1,2 @@
 # SeventhBuildingApp
-<img scr="https://github.com/liudi12/SeventhBuildingApp/blob/main/sekei.jpg"/>
+<img src="https://github.com/liudi12/SeventhBuildingApp/blob/main/sekei.jpg"/>
